@@ -22,3 +22,7 @@
 ## Traffic
 - Requires Yolopretrained model
 - Run object_detection.py
+
+## Stocks
+- Data is taken from Alphavantage, no need to download. Code has direct link to dataset
+- Stocks.ipynb
