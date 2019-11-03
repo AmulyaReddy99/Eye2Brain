@@ -10,6 +10,10 @@
 - Pretrained model `vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5`
 - Run `Image Captions.ipynb`
 
+## Voice Recognition
+- Data from `https://www.openslr.org/12`
+- Run `Voice Recognition.ipynb`
+
 ## Banana
 - No need for large dataset since transfer learning is used.
 - Manually labeled data (255 images of green, ripe and overripe bananas) got from [here](github.com/giovannipcarvalho/banana-ripeness-classificationtree/master/data)
