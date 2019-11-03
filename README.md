@@ -19,6 +19,14 @@
 - Manually labeled data (255 images of green, ripe and overripe bananas) got from [here](github.com/giovannipcarvalho/banana-ripeness-classificationtree/master/data)
 - Run `Banana.ipynb`
 
+## Stocks
+- Data is taken from Alphavantage, no need to download. Code has direct link to dataset
+- `Stocks.ipynb`
+
+## Sarcasm Detection
+- Used tf-idf, LinearSVC, GaussianNB, LogisticRegression and RandomForest algorithms
+- Run `Sarcasm Detection.ipynb`
+
 ## Leaf
 - Leaf snap dataset
 - Flavia dataset
@@ -31,10 +39,6 @@
 ## Traffic
 - Requires Yolopretrained model
 - Run `object_detection.py`
-
-## Stocks
-- Data is taken from Alphavantage, no need to download. Code has direct link to dataset
-- `Stocks.ipynb`
 
 ## Mnist 
 - First program
