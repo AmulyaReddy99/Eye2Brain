@@ -1,4 +1,4 @@
-# DNN
+# Eye2Brain
 
 ## Django - app
 Our aim is to build a web interface for the models.
