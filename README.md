@@ -13,6 +13,10 @@ Our aim is to build a web interface for the models.
 ## The UI
 ![cover photo](https://github.com/AmulyaReddy99/Eye2Brain/blob/master/img/cover%20page.png)
 
+| Now            |  Expected |
+------------- | ---------
+|![cover photo](https://github.com/AmulyaReddy99/Eye2Brain/blob/master/img/output.png)(:width="50%") | ![cover photo](https://github.com/AmulyaReddy99/Eye2Brain/blob/master/img/output.png)(:width="50%") |
+
 ## Explaination of DNN files
 
 | Name  | Dataset & Downloads | File |
