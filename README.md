@@ -23,3 +23,4 @@ Our aim is to build a web interface for the models.
 | Leaf Identification | Leaf snap dataset | `Leaf.ipynb` |
 | Handwritten Text recognition | IAM handwriting dataset Top 50 (kaggle) | `Handwritten.ipynb` |
 | Object Detection | Yolopretrained model | `object_detection.py` |
+
