@@ -17,6 +17,8 @@ Our aim is to build a web interface for the models.
 ------------- | ---------
 |![cover photo](https://github.com/AmulyaReddy99/Eye2Brain/blob/master/img/output.png)| ![cover photo](https://github.com/AmulyaReddy99/Eye2Brain/blob/master/img/expected.png)|
 
+*PLEASE DOWNLOAD THE DATASETS. INSTRUCTIONS PROVIDED IN THE TABLE BELOW*
+
 ## Explaination of DNN files
 
 | Name  | Dataset & Downloads | File |
