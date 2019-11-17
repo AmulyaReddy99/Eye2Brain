@@ -13,7 +13,7 @@ Our aim is to build a web interface for the models.
 ## Explaination of DNN files
 
 | Name  | Dataset & Downloads | File |
-| ------------- | ------------- |
+| ------------- | ------------- | ----------- |
 | Brain Tumor  | Pretrained model `vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5` | `Tumor.ipynb` | 
 | Image Captions  | `Kaggle Flikr image dataset` & Pretrained model `vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5` | `Image Captions.ipynb` |
 | Voice Recognition | `https://www.openslr.org/12` | `Voice Recognition.ipynb` | 
