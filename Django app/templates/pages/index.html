@@ -1,33 +1,49 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+  <style type="text/css">
+    .row {
+      display: flex;
+    }
+    .column {
+      flex: 50%;
+    }
+  </style>
+
   <section id="intro">
     <div class="intro-container wow fadeIn">
-      <h1 class="mb-4 pb-0">The Annual<br><span>Conference</span></h1>
-      <p class="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p>
-      <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
+      <h1 class="mb-4 pb-0">The DNN<br><span>Interface</span></h1>
+      <p class="mb-4 pb-0">A work of collaboration</p>
+      <a href="http://youtube.com/" class="venobox play-btn mb-4" data-vbtype="video"
         data-autoplay="true"></a>
-      <a href="{% url 'about' %}" class="about-btn scrollto">Speakers</a>
+      <a href="#projects" class="about-btn scrollto">Projects</a>
     </div>
   </section>
 
   <main id="main">
-	<section id="about">
+	<section id="projects">
       <div class="container">
-        <div class="row" align="center">
-          <div class="col-lg-6">
-            <h2>About The Event</h2>
-            <p>Sed nam ut dolor qui </p>
-          </div>
-          <div class="col-lg-3">
-            <h3>Where</h3>
-            <p>Downtown Conference Center, New York</p>
-          </div>
-          <div class="col-lg-3">
-            <h3>When</h3>
-            <p>Monday to Wednesday<br>10-12 December</p>
-          </div>
+        <div align="center">
+          {% for i in n2 %}
+            <div class="col-lg-6">
+              <div style="padding: 40px;">
+                <h2>{{i}}</h2>
+                <div style="background-image: linear-gradient(to right, #009eff , #00ffe3); border-radius: 15px;">
+                  <div class="row">
+                    <div class="column" style="height: 400px;">
+                      <p>Input</p>
+                    </div>
+                    <div class="column">
+                      <p>Output</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
         </div>
       </div>
     </section>
+  </main>
 {% endblock %}

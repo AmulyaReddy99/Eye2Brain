@@ -1,5 +1,15 @@
 # DNN
 
+## Django - app
+Our aim is to build a web interface for the models.
+
+## Setup
+- Clone this repo
+- `cd DNN-master`
+- Start jupyter noterbook to view the ipynb files
+- To run the app goto `cd Django app`
+- Run the app by `python3 manage.py runserver`
+
 ## Brain Tumor
 - Download `vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5`
 - Run `Tumor.ipynb`
