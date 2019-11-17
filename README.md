@@ -10,6 +10,9 @@ Our aim is to build a web interface for the models.
 - To run the app goto `cd Django app`
 - Run the app by `python3 manage.py runserver`
 
+## The UI
+![cover photo](https://github.com/AmulyaReddy99/Eye2Brain/blob/master/img/cover%20page.png)
+
 ## Explaination of DNN files
 
 | Name  | Dataset & Downloads | File |
