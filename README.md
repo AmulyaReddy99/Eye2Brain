@@ -15,7 +15,7 @@ Our aim is to build a web interface for the models.
 
 | Now            |  Expected |
 ------------- | ---------
-|![cover photo](https://github.com/AmulyaReddy99/Eye2Brain/blob/master/img/output.png)| ![cover photo](https://github.com/AmulyaReddy99/Eye2Brain/blob/master/img/output.png)|
+|![cover photo](https://github.com/AmulyaReddy99/Eye2Brain/blob/master/img/output.png)| ![cover photo](https://github.com/AmulyaReddy99/Eye2Brain/blob/master/img/expected.png)|
 
 ## Explaination of DNN files
 
