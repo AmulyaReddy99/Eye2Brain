@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <style type="text/css">
+    .row {
+      display: flex;
+    }
+    .column {
+      flex: 50%;
+    }
+  </style>
+
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <h1 class="mb-4 pb-0">The Eye to<br><span>BRAIN</span></h1>
+      <p class="mb-4 pb-0">An interface for DNN projects</p>
+      <a href="http://youtube.com/" class="venobox play-btn mb-4" data-vbtype="video"
+        data-autoplay="true"></a>
+      <a href="#projects" class="about-btn scrollto">Projects</a>
+    </div>
+  </section>
+
+  <main id="main">
+	<section id="projects">
+      <div class="container">
+        <div align="center">
+          {% for i in n2 %}
+            <div class="col-lg-6">
+              <div style="padding: 40px;">
+                <h2>{{i}}</h2>
+                <div style="background-image: linear-gradient(to right, #009eff , #00ffe3); border-radius: 15px;">
+                  <div class="row">
+                    <div class="column" style="height: 400px;">
+                      <p>Input</p>
+                    </div>
+                    <div class="column">
+                      <p>Output</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}
