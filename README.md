@@ -1,5 +1,5 @@
 # Eye2Brain
-[![forthebadge deployed-on-Heroku](https://heroku-badge.herokuapp.com/?app=intense-castle-49145)](https://intense-castle-49145.herokuapp.com/)
+[![forthebadge deployed-on-Heroku](https://heroku-badge.herokuapp.com/?app=eye2brain)](https://eye2brain.herokuapp.com/)
 [![Open Source Love png2](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 ![version](https://img.shields.io/badge/version-1.0-blue)
 
