@@ -1,6 +1,7 @@
 
 # Eye2Brain
-![Heroku](https://heroku-badge.herokuapp.com/?app=intense-castle-49145&style=for-the-badge)
+[![forthebadge Heroku](https://heroku-badge.herokuapp.com/?app=intense-castle-49145)](https://intense-castle-49145.herokuapp.com/)
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 ![version](https://img.shields.io/badge/version-1.0-blue)
 
 ## Django - app
