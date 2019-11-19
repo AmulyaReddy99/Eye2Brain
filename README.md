@@ -1,7 +1,7 @@
 
 # Eye2Brain
-![Heroku](https://heroku-badge.herokuapp.com/?app=intense-castle-49145&style=for-the-badge&logo=appveyor)
-![version](https://img.shields.io/badge/version-1.0-blue&style=for-the-badge&logo=appveyor)
+![Heroku](https://heroku-badge.herokuapp.com/?app=intense-castle-49145&style=for-the-badge)
+![version](https://img.shields.io/badge/version-1.0-blue)
 
 ## Django - app
 Our aim is to build a web interface for the models.
