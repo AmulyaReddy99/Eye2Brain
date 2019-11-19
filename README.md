@@ -1,9 +1,6 @@
-
 # Eye2Brain
-[![forthebadge made-with-Django](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![forthebadge deployed-on-Heroku](https://heroku-badge.herokuapp.com/?app=intense-castle-49145)](https://intense-castle-49145.herokuapp.com/)
 [![Open Source Love png2](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
-[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/)
 ![version](https://img.shields.io/badge/version-1.0-blue)
 
 ## Django - app
