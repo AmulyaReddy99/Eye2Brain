@@ -1,7 +1,7 @@
+
 # Eye2Brain
-![Heroku](https://heroku-badge.herokuapp.com/?app=intense-castle-49145)
-![version](https://img.shields.io/badge/version-1.0-blue)
-[![GitHub issues by-label](https://img.shields.io/github/issues/badges/shields/good%20first%20issue)](https://github.com/badges/shields/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+![Heroku](https://heroku-badge.herokuapp.com/?app=intense-castle-49145&style=for-the-badge&logo=appveyor)
+![version](https://img.shields.io/badge/version-1.0-blue&style=for-the-badge&logo=appveyor)
 
 ## Django - app
 Our aim is to build a web interface for the models.
