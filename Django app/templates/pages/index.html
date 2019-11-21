@@ -8,6 +8,11 @@
     }
     .column {
       flex: 50%;
+      height: 400px;
+    }
+    .content{
+      background-image: linear-gradient(to right, #009eff , #00ffe3);
+      border-radius: 15px;
     }
   </style>
 
@@ -25,16 +30,16 @@
 	<section id="projects">
       <div class="container">
         <div align="center">
-          {% for i in n2 %}
+          {% for k,v in input_content.items %}
             <div class="col-lg-6">
               <div style="padding: 40px;">
-                <h2>{{i}}</h2>
-                <div style="background-image: linear-gradient(to right, #009eff , #00ffe3); border-radius: 15px;">
+                <h2>{{k}}</h2>
+                <div class="content">
                   <div class="row">
-                    <div class="column" style="height: 400px;">
-                      <p>Input</p>
+                    <div class="column input_col">
+                      {{v | safe}}
                     </div>
-                    <div class="column">
+                    <div class="column output_col">
                       <p>Output</p>
                     </div>
                   </div>
