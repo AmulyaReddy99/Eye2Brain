@@ -37,10 +37,15 @@
                 <div class="content">
                   <div class="row">
                     <div class="column input_col">
-                      {{v | safe}}
+                      <form action='/stocks' method="post">
+                        {% csrf_token %}
+                        {{v | safe}}
+                        <input type='submit' class="btn btn-submit">
+                      </form>
                     </div>
                     <div class="column output_col">
                       <p>Output</p>
+                      <!-- {{ form.as_p }} -->
                     </div>
                   </div>
                 </div>

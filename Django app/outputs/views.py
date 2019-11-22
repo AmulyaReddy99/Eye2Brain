@@ -3,6 +3,8 @@ from django.http import HttpResponse
 from django.conf import settings
 from django.core.files.storage import FileSystemStorage
 import json
+from bs4 import BeautifulSoup  
+from outputs.models import InputClass
 
 input_content = {
 	'Brain Tumor':'''Please input mri scanned image
@@ -18,7 +20,7 @@ input_content = {
 							<form action='/banana' method="post"><input type='file' name="banana" class="custom-file-input"><input type='submit' class="btn btn-submit"></form>''',
 
 	'Stocks price prediction':'''Enter the Security Id (Eg. MSFT)
-							<form action='/stock' method="post"><input type='text' name="stock" class="form-control"><input type='submit' class="btn btn-submit"></form>''',
+							<input type='text' name="stock">''',
 	
 	'Sarcasm Detection':'''Enter a sentence in the input box below
 						<form action='/sarcasm' method="post"><input type='text' name="sarcasm" class="form-control"><input type='submit' class="btn btn-submit"></form>''',
@@ -33,14 +35,14 @@ output_content = {
 	'Brain Tumor':''
 }
 
-def brain(request):
-	print("-------> brain")
-	# if request.method == 'POST':
-	# 	form = InputClass(request.POST, request.FILES)
-	image = request.files['brain']
-	print("=======> BRAIN")
+def stocks(request):
+	form = InputClass(request.POST)
+	text = form['stock']
+
+	soup = BeautifulSoup(str(text))
+	value = soup.find('input').get('value')
 	# brain_model.predict(image)
-	return HttpResponse("Your response")
+	return HttpResponse("Your response is "+value)
 
 # Create your views here.
 def index(request):
