@@ -9,8 +9,8 @@ env:
   - DJANGO=2.0.6
 
 before_install:
-  - export DJANGO_SETTINGS_MODULE=deeplearning.settings
-  - export PYTHONPATH=$HOME/builds/amulyareddy99/Eye2Brain/blob/master/Django%20app
+  - export DJANGO_SETTINGS_MODULE="Django app/deeplearning.settings"
+  - export PYTHONPATH=$HOME/builds/amulyareddy99/Eye2Brain/Django\ app
   - export PIP_USE_MIRRORS=true
   - gem install bundler
 
