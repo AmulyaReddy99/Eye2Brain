@@ -12,6 +12,7 @@ before_install:
   - export DJANGO_SETTINGS_MODULE=deeplearning.settings
   - export PYTHONPATH=$HOME/builds/amulyareddy99/Eye2Brain
   - export PIP_USE_MIRRORS=true
+  - gem install bundler
 
 install:
   - pip install -r requirements.txt
