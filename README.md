@@ -1,12 +1,8 @@
 # Eye2Brain
 [![forthebadge deployed-on-Heroku](https://heroku-badge.herokuapp.com/?app=eye2brain)](https://eye2brain.herokuapp.com/)
-
 [![Slack](https://img.shields.io/static/v1?label=chat&message=slack&color=<COLOR>)](https://app.slack.com/client/TQAB3S6BD/CQDT4KJJD)
-
 [![Status](https://travis-ci.org/pnpm/pnpm.svg?branch=master)](https://travis-ci.org/pnpm/pnpm "See test builds")
-
 [![Open Source Love png2](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
-
 ![forks](https://img.shields.io/github/forks/AmulyaReddy99/Eye2Brain)
 ![stars](https://img.shields.io/github/stars/AmulyaReddy99/Eye2Brain)
 ![version](https://img.shields.io/badge/version-1.0-blue)
