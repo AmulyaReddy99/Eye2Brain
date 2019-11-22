@@ -36,10 +36,9 @@
                 <h2>{{k}}</h2>
                 <div class="content">
                   <div class="row">
-                    <div class="column input_col">
-                      <form action='/stocks' method="post">
-                        {% csrf_token %}
+                    <div class="column input_col">                        
                         {{v | safe}}
+                        {% csrf_token %}
                         <input type='submit' class="btn btn-submit">
                       </form>
                     </div>
