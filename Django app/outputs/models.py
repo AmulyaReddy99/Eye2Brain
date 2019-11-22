@@ -2,11 +2,13 @@ from django.db import models
 from django import forms  
 
 # Create your models here.
-class EditProfile(forms.ModelForm):
-	def __init__(self, brain, *args, **kwargs):
-		self.profile = profile
-		super(EditProfile, self).__init__(*args, **kwargs)
-		self.fields['name'] = forms.CharField(label='Name:', initial= profile.name,required=False)
+class InputClass(forms.ModelForm):
+	pass
+	# brain = forms.ImageField(upload_to='images/')
+	# captions = forms.ImageField(upload_to='images/')
+	# voice = forms.CharField(label='voice', max_length=100)
+	# banana = forms.ImageField(upload_to='images/')
+	# stock = forms.CharField(label='stock', max_length=100)
+	# sarcasm = forms.CharField(label='sarcasm', max_length=100)
+	# leaf = forms.ImageField(upload_to='images/')
 
-class Meta:
-	fields = ("name", "phoneNumber","streetAddress", "profilePic")
