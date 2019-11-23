@@ -9,7 +9,7 @@ Keras-Applications==1.0.6
 Keras-Preprocessing==1.0.5
 lxml==4.3.3
 matplotlib==2.2.0
-nltk==3.3
+nltk==3.4.5
 np-utils==0.5.11.1
 numpy==1.16.4
 opencv-python==4.1.0.25
