@@ -1,9 +1,14 @@
 import pandas as pd
 import numpy as np 
-import soundfile as sf # flac file 
-import matplotlib.pyplot as plt
 
-import cv2, glob, os, re, random, csv
+# heroku run bash -a eye2brain 
+# import soundfile as sf # flac file 
+# import matplotlib.pyplot as plt
+
+# problems with cv2, matplotlib
+
+# import cv2
+import glob, os, re, random, csv
 from keras.applications import VGG16
 from keras.applications.vgg16 import VGG16, preprocess_input
 from keras import models
