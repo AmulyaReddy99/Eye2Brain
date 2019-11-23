@@ -1,9 +1,32 @@
 import pandas as pd
-import numpy as np  
+import numpy as np 
+import soundfile as sf # flac file 
 import matplotlib.pyplot as plt
 
-from keras.models import Sequential  
-from keras.layers import Dense, LSTM, Dropout 
+import cv2, glob, os, re, random, csv
+from keras.applications import VGG16
+from keras.applications.vgg16 import VGG16, preprocess_input
+from keras import models
+from keras.models import Sequential, Model 
+from keras.layers import Dense, LSTM, Dropout, Conv2D, Flatten, AveragePooling2D, MaxPooling2D, Lambda
+from keras.optimizers import Adam, RMSprop
+
+from keras.preprocessing.text import Tokenizer
+from keras.preprocessing.image import ImageDataGenerator
+from keras.callbacks import EarlyStopping, ModelCheckpoint
+from keras.utils import np_utils, to_categorical
+
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import MinMaxScaler
+
+from sklearn.svm import LinearSVC
+from sklearn.naive_bayes import GaussianNB
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+
+from sklearn.model_selection import cross_val_score
+from sklearn.metrics import confusion_matrix
 
 from keras.models import load_model
 

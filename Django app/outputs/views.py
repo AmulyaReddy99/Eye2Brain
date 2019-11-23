@@ -9,12 +9,12 @@ from outputs.models import InputClass, ImagesForm
 
 input_content = {
 	'Brain Tumor':'''Please input mri scanned image
-					<input type='text' name="Brain_Tumor">''',
+					<input type='file' name="Brain_Tumor">''',
 	
 	'Image Captions':'''Please input an image
 					<input type='file' name="Image_Captions">''',
 	
-	'Voice Recognition':'''Input mp3 or wav file of Sharhukh/Amitab/Kajol and watch the classification
+	'Voice Recognition':'''Input flac or mp3 or wav file of Sharhukh/Amitab/Kajol and watch the classification
 					<input type='file' name="Voice_Recognition">''',
 	
 	'Banana Clasification':'''Please input an image of banana
