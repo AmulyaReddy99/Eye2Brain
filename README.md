@@ -17,12 +17,18 @@ Our aim is to build a web interface for the models.
 - To run the app goto `cd Django app`
 - Run the app by `python3 manage.py runserver`
 
+** Check code snippets for `# @Todo`. Change the code there as per requirements mentioned in the comments below. Refer to respective Readme in outputs directory. **
+Files where @ Todo can be found are:
+	- load_saved_model.py
+	- views.py
+
+
 ## The UI
 ![cover photo](https://github.com/AmulyaReddy99/Eye2Brain/blob/master/img/cover%20page.png)
 
-| Now            |  Expected |
+ Now            |  Expected 
 ------------- | ---------
-|![cover photo](https://github.com/AmulyaReddy99/Eye2Brain/blob/master/img/output.png)| ![cover photo](https://github.com/AmulyaReddy99/Eye2Brain/blob/master/img/expected.png)|
+![cover photo](https://github.com/AmulyaReddy99/Eye2Brain/blob/master/img/output.png)| ![cover photo](https://github.com/AmulyaReddy99/Eye2Brain/blob/master/img/expected.png)
 
 *PLEASE DOWNLOAD THE DATASETS. INSTRUCTIONS PROVIDED IN THE TABLE BELOW*
 

@@ -34,21 +34,27 @@ input_content = {
 
 import outputs.load_saved_model as m
 
+# @Todo
+test_input = 1 #@Todo: Change this variable to np.array which stores input data like image, text, numericals etc which is passed to respective functions.
+
 output_content = {
-	'Brain Tumor': m.brain(1),
-	'Image Captions': m.captions(1),
-	'Voice Recognition': m.voice(1),
-	'Banana Clasification': m.banana(1),
-	'Stocks price prediction': m.stock(1),
-	'Sarcasm Detection': m.sarcasm(1),
-	'Leaf Identification': m.leaf(1)
+	'Brain Tumor': m.brain(test_input),
+	'Image Captions': m.captions(test_input),
+	'Voice Recognition': m.voice(test_input),
+	'Banana Clasification': m.banana(test_input),
+	'Stocks price prediction': m.stock(test_input),
+	'Sarcasm Detection': m.sarcasm(test_input),
+	'Leaf Identification': m.leaf(test_input)
 }
 
 def simple_upload(request,myfile):
     if request.method == 'POST' and request.FILES[myfile]:
         myfile = request.FILES[myfile]
+        # @Todo:
+        """Assign file data to test_input. """
         fs = FileSystemStorage()
-        filename = fs.save(myfile.name, myfile)
+        extention = myfile.name.split('.')[-1]
+        filename = fs.save("test"+extention, myfile)
         uploaded_file_url = fs.url(filename)
         print("Done uploading.....")
 
@@ -71,8 +77,11 @@ def models(request):
 		print('--------->',form[value.replace(' ','_')])
 		print('=========>',output_content[value])
 
-	return redirect('index')
-	# return HttpResponse("You submitted from "+str(request)+":\n"+str(text))
+	# @Todo: Change this to redirect to same page without reloading.
+	return HttpResponse("You submitted from "+str(request)+":\n"+str(text))
+
+	"""Donot uncomment the below"""
+	# return redirect('index')
 	# import outputs.load_saved_models as m
 	# form = InputClass(request.POST)
 	# text = form['stock']
@@ -86,6 +95,7 @@ def models(request):
 	# print("++++++++>",result)
 	
 	# return HttpResponse("Prediction is "+str(result[0][0]))
+
 
 # Create your views here.
 def index(request):
