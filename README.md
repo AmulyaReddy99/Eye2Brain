@@ -15,6 +15,8 @@ Our aim is to build a web interface for the models.
 - `cd DNN-master`
 - Start jupyter noterbook to view the ipynb files
 - To run the app goto `cd Django app`
+- Create virtual environment (Delete env folder used here since it may not work in your environment)
+- Install dependencies by `pip3 install -r requirements.txt`
 - Run the app by `python3 manage.py runserver`
 
 **Check code snippets for `# @Todo`. Change the code there as per requirements mentioned in the comments below. Refer to respective Readme in outputs directory.**
@@ -23,6 +25,7 @@ Files where @ Todo can be found are:
 - load_saved_model.py
 - views.py
 
+----------------------------------
 
 ## The UI
 ![cover photo](https://github.com/AmulyaReddy99/Eye2Brain/blob/master/img/cover%20page.png)
