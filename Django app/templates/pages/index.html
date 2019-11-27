@@ -16,6 +16,31 @@
     }
   </style>
 
+<!--   <script>
+    $(document).ready(function() {
+        $('#ajax').submit(function(e) {
+            e.preventDefault();  // disables submit's default action
+            var data = new FormData($('#ajax').get(0));
+            console.log(data);
+
+            $.ajax({
+                url: '/models/',
+                type: 'POST',
+                data: data,
+                processData: false,
+                contentType: false,
+                success: function(data) {
+                    data = JSON.parse(data); // converts string of json to object
+                    $('#photo').html('<p>Done right</p>');
+                    // <h2>title</h2> You do not use 'title' in your project !!
+                    // alt=title see previous comment
+                }
+            });
+            return false;
+        });
+    });
+  </script>  -->
+
   <section id="intro">
     <div class="intro-container wow fadeIn">
       <h1 class="mb-4 pb-0">The Eye to<br><span>BRAIN</span></h1>
@@ -41,6 +66,7 @@
                         {{v | safe}}
                         {% csrf_token %}
                         <input type="hidden" name="name" value="{{k}}">
+                        <div id="photo"></div>
                         <input type='submit' class="btn btn-submit">
                       </form>
                     </div>

@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, render_to_response
 from django.http import HttpResponse
 from django.conf import settings
 from django.core.files.storage import FileSystemStorage
-import json
+import json, cv2, os
 import numpy as np
 from bs4 import BeautifulSoup  
 from outputs.models import InputClass, ImagesForm
@@ -54,31 +54,39 @@ def simple_upload(request,myfile):
         """Assign file data to test_input. """
         fs = FileSystemStorage()
         extention = myfile.name.split('.')[-1]
-        filename = fs.save("test"+extention, myfile)
+        filename = fs.save(myfile.name, myfile)
         uploaded_file_url = fs.url(filename)
         print("Done uploading.....")
+        return filename
 
 
 def models(request):
-
+	global test_input
 	form = InputClass(request.POST)
 	text = form['name']
-
 	soup = BeautifulSoup(str(text))
 	value = soup.find('input').get('value')
-
 	temp = value.replace(' ','_')
 	try:
 		if request.method == 'POST' and request.FILES[temp]:
 			image_form = ImagesForm(request.POST, request.FILES)
-			simple_upload(request,temp)
+			filename = simple_upload(request,temp)
+			response = HttpResponse()
+			response.write("<img src='../media/"+filename+"' height='50px' width='50px'/>")
+			return response
 	except Exception as e:
 		print("-------> ", e)
-		print('--------->',form[value.replace(' ','_')])
-		print('=========>',output_content[value])
+		# try:
+		# 	print('--------->',form[value.replace(' ','_')])
+		# except Exception as e:
+		# 	print(e)
+		# print('=========>',output_content[value])
+		# test_input = output_content[value]
 
 	# @Todo: Change this to redirect to same page without reloading.
-	return HttpResponse("You submitted from "+str(request)+":\n"+str(text))
+	# return json.dumps({"img":str(test_input)})
+	return HttpResponse(str(output_content[value]))
+	# return HttpResponse("You submitted from "+str(request)+":\n"+str(text))
 
 	"""Donot uncomment the below"""
 	# return redirect('index')
