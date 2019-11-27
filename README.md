@@ -18,9 +18,10 @@ Our aim is to build a web interface for the models.
 - Run the app by `python3 manage.py runserver`
 
 **Check code snippets for `# @Todo`. Change the code there as per requirements mentioned in the comments below. Refer to respective Readme in outputs directory.**
+
 Files where @ Todo can be found are:
-	- load_saved_model.py
-	- views.py
+- load_saved_model.py
+- views.py
 
 
 ## The UI
