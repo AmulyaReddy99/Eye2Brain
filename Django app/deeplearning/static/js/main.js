@@ -76,6 +76,26 @@ jQuery(document).ready(function( $ ) {
       $('#mobile-body-overly').toggle();
     });
 
+    // $(document).on('submit', '#input_form', function(e) {
+    //   var xhttp = new XMLHttpRequest();
+
+    //   xhttp.onreadystatechange = function() {
+    //     if (this.readyState == 4 && this.status == 200) {
+    //       console.log("SUCCESS");
+    //       // document.getElementById("photo").innerHTML = this.responseText;
+    //     }else{
+    //       console.log("ERROR...");
+    //       alert("ERROR");
+    //     }
+    //   };
+
+      // xhttp.open("POST", "http://localhost:8000/models", true);
+      // xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      // xhttp.setRequestHeader("X-CSRFToken", document.cookie);
+      // xhttp.send();
+
+    // });
+
     $(document).click(function(e) {
       var container = $("#mobile-nav, #mobile-nav-toggle");
       if (!container.is(e.target) && container.has(e.target).length === 0) {

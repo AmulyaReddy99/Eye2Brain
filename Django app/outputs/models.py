@@ -15,7 +15,7 @@ class ImagesForm(forms.ModelForm):
 
 
 class InputClass(forms.Form):
-	Brain_Tumor = forms.CharField(label='Brain_Tumor', max_length=100)
+	# Brain_Tumor = forms.CharField(label='Brain_Tumor', max_length=100)
 	# Image_Captions = forms.FileField(upload_to='images/')
 	# Voice_Recognition = forms.FileField(upload_to='images/')
 	# Banana_Clasification = forms.FileField(upload_to='images/')

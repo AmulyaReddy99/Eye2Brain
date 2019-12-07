@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, render_to_response
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.conf import settings
 from django.core.files.storage import FileSystemStorage
 import json, cv2, os
@@ -7,27 +7,28 @@ import numpy as np
 from bs4 import BeautifulSoup  
 from outputs.models import InputClass, ImagesForm
 
+
 input_content = {
 	'Brain Tumor':'''Please input mri scanned image
-					<input type='file' name="Brain_Tumor">''',
+					<input type='file' id="id" name="Brain_Tumor">''',
 	
 	'Image Captions':'''Please input an image
-					<input type='file' name="Image_Captions">''',
+					<input type='file' id="id" name="Image_Captions">''',
 	
 	'Voice Recognition':'''Input flac or mp3 or wav file of Sharhukh/Amitab/Kajol and watch the classification
-					<input type='file' name="Voice_Recognition">''',
+					<input type='file' id="id" name="Voice_Recognition">''',
 	
 	'Banana Clasification':'''Please input an image of banana
-					<input type='file' name="Banana_Clasification">''',
+					<input type='file' id="id" name="Banana_Clasification">''',
 
 	'Stocks price prediction':'''Enter the Security Id (Eg. MSFT)
-					<input type='text' name="Stocks_price_prediction">''',
+					<input type='text' id="id" name="Stocks_price_prediction">''',
 	
 	'Sarcasm Detection':'''Enter a sentence in the input box below
-					<input type='text' name="Sarcasm_Detection">''',
+					<input type='text' id="id" name="Sarcasm_Detection">''',
 	
 	'Leaf Identification':'''Please input an image of leaf
-					<input type='file' name="Leaf_Identification">''',
+					<input type='file' id="id" name="Leaf_Identification">''',
 	
 
 }
@@ -48,6 +49,7 @@ output_content = {
 }
 
 def simple_upload(request,myfile):
+    global test_input
     if request.method == 'POST' and request.FILES[myfile]:
         myfile = request.FILES[myfile]
         # @Todo:
@@ -56,8 +58,8 @@ def simple_upload(request,myfile):
         extention = myfile.name.split('.')[-1]
         filename = fs.save(myfile.name, myfile)
         uploaded_file_url = fs.url(filename)
+        test_input = uploaded_file_url
         print("Done uploading.....")
-        return filename
 
 
 def models(request):
@@ -70,23 +72,17 @@ def models(request):
 	try:
 		if request.method == 'POST' and request.FILES[temp]:
 			image_form = ImagesForm(request.POST, request.FILES)
-			filename = simple_upload(request,temp)
-			response = HttpResponse()
-			response.write("<img src='../media/"+filename+"' height='50px' width='50px'/>")
-			return response
+			simple_upload(request,temp)
 	except Exception as e:
 		print("-------> ", e)
-		# try:
-		# 	print('--------->',form[value.replace(' ','_')])
-		# except Exception as e:
-		# 	print(e)
-		# print('=========>',output_content[value])
-		# test_input = output_content[value]
+
+	test_output = output_content[value]
 
 	# @Todo: Change this to redirect to same page without reloading.
-	# return json.dumps({"img":str(test_input)})
-	return HttpResponse(str(output_content[value]))
-	# return HttpResponse("You submitted from "+str(request)+":\n"+str(text))
+	print(str(test_input))
+	print('-----------------------------')
+	return HttpResponse('<h2>Input</h2><img src='+test_input+'/><hr><h2>Output</h2>'+test_output)
+	# return JsonResponse({"img":'<h2>Input</h2><img src='+test_input+'/>',"output":'<hr><h2>Output</h2>'+test_output})
 
 	"""Donot uncomment the below"""
 	# return redirect('index')
