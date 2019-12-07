@@ -81,7 +81,7 @@ def models(request):
 	# @Todo: Change this to redirect to same page without reloading.
 	print(str(test_input))
 	print('-----------------------------')
-	return HttpResponse('<h2>Input</h2><img src='+test_input+'/><hr><h2>Output</h2>'+test_output)
+	return HttpResponse('<h2>Input</h2><img width="193" height="130" src='+test_input+'/><hr><h2>Output</h2>'+test_output)
 	# return JsonResponse({"img":'<h2>Input</h2><img src='+test_input+'/>',"output":'<hr><h2>Output</h2>'+test_output})
 
 	"""Donot uncomment the below"""

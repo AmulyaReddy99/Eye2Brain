@@ -7,6 +7,8 @@
 ![stars](https://img.shields.io/github/stars/AmulyaReddy99/Eye2Brain)
 ![version](https://img.shields.io/badge/version-1.0-blue)
 
+Join slack [here](https://join.slack.com/t/eye2brain/shared_invite/enQtODI5OTIyNjcyNDMzLWE1ZTUwNTgyZDcwYzZlZmE5ODdkZjJjYmQzMzBhMTY3MGU3OGVjZGE2MDIzYWQ5ZWI3ZWY4MGFmZjFmMTFlZmU)
+
 ## Django - app
 Our aim is to build a web interface for the models.
 
