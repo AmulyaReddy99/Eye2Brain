@@ -10,6 +10,8 @@
 Join slack [here](https://join.slack.com/t/eye2brain/shared_invite/enQtODI5OTIyNjcyNDMzLWE1ZTUwNTgyZDcwYzZlZmE5ODdkZjJjYmQzMzBhMTY3MGU3OGVjZGE2MDIzYWQ5ZWI3ZWY4MGFmZjFmMTFlZmU)
 
 Find datasets [here](https://drive.google.com/open?id=1iAlhNdK2QRfdpruK7ibMtgjGzND52mie)
+Find saved_models [here](https://drive.google.com/open?id=1qsB1vqGZyuL6cyF2Mg1oxfy7AyUv_OiX)
+Replace saved_models uploaded to github by this folder.
 
 ## Django - app
 Our aim is to build a web interface for the models.
@@ -21,6 +23,7 @@ Our aim is to build a web interface for the models.
 - To run the app goto `cd Django app`
 - Create virtual environment (Delete env folder used here since it may not work in your environment)
 - Install dependencies by `pip3 install -r requirements.txt`
+- Replace saved_models uploaded to github with the drive folder provided in the link above
 - Run the app by `python3 manage.py runserver`
 - Click on `Choose file`
 - Take input from `Django app/test images` or from any other source you wish
