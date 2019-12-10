@@ -9,6 +9,8 @@
 
 Join slack [here](https://join.slack.com/t/eye2brain/shared_invite/enQtODI5OTIyNjcyNDMzLWE1ZTUwNTgyZDcwYzZlZmE5ODdkZjJjYmQzMzBhMTY3MGU3OGVjZGE2MDIzYWQ5ZWI3ZWY4MGFmZjFmMTFlZmU)
 
+Find datasets [here](https://drive.google.com/open?id=1iAlhNdK2QRfdpruK7ibMtgjGzND52mie)
+
 ## Django - app
 Our aim is to build a web interface for the models.
 
@@ -20,6 +22,8 @@ Our aim is to build a web interface for the models.
 - Create virtual environment (Delete env folder used here since it may not work in your environment)
 - Install dependencies by `pip3 install -r requirements.txt`
 - Run the app by `python3 manage.py runserver`
+- Click on `Choose file`
+- Take input from `Django app/test images` or from any other source you wish
 
 **Check code snippets for `# @Todo`. Change the code there as per requirements mentioned in the comments below. Refer to respective Readme in outputs directory.**
 
