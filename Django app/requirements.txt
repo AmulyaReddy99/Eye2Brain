@@ -11,7 +11,7 @@ lxml==4.3.3
 matplotlib==2.2.0
 np-utils==0.5.11.1
 numpy==1.16.4
-opencv-python==4.1.0.25
+opencv-python==4.2.0.32
 pandas==0.23.0
 Pillow==6.2.0
 regex==2018.1.10
